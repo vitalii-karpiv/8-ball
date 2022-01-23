@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD243D72279DC3A4000B3E21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD243D71279DC3A4000B3E21 /* Constants.swift */; };
+		DD243D74279DC42B000B3E21 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD243D73279DC42B000B3E21 /* SettingsViewController.swift */; };
 		DD898AA9279C873800F6188A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD898AA8279C873800F6188A /* AppDelegate.swift */; };
 		DD898AAB279C873800F6188A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD898AAA279C873800F6188A /* SceneDelegate.swift */; };
 		DD898AAD279C873800F6188A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD898AAC279C873800F6188A /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD243D71279DC3A4000B3E21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DD243D73279DC42B000B3E21 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DD898AA5279C873800F6188A /* 8-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "8-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD898AA8279C873800F6188A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD898AAA279C873800F6188A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,12 +67,14 @@
 				DD898AA8279C873800F6188A /* AppDelegate.swift */,
 				DD898AAA279C873800F6188A /* SceneDelegate.swift */,
 				DD898AAC279C873800F6188A /* ViewController.swift */,
+				DD243D73279DC42B000B3E21 /* SettingsViewController.swift */,
 				DDB110D9279DA02800C2E126 /* QuestionManager.swift */,
 				DDB110DB279DA6E600C2E126 /* Answer.swift */,
 				DD898AAE279C873800F6188A /* Main.storyboard */,
 				DD898AB1279C873A00F6188A /* Assets.xcassets */,
 				DD898AB3279C873A00F6188A /* LaunchScreen.storyboard */,
 				DD898AB6279C873A00F6188A /* Info.plist */,
+				DD243D71279DC3A4000B3E21 /* Constants.swift */,
 			);
 			path = "8-Ball";
 			sourceTree = "<group>";
@@ -146,9 +152,11 @@
 			files = (
 				DD898AAD279C873800F6188A /* ViewController.swift in Sources */,
 				DD898AA9279C873800F6188A /* AppDelegate.swift in Sources */,
+				DD243D74279DC42B000B3E21 /* SettingsViewController.swift in Sources */,
 				DDB110DC279DA6E600C2E126 /* Answer.swift in Sources */,
 				DD898AAB279C873800F6188A /* SceneDelegate.swift in Sources */,
 				DDB110DA279DA02800C2E126 /* QuestionManager.swift in Sources */,
+				DD243D72279DC3A4000B3E21 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
