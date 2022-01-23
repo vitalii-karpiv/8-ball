@@ -13,6 +13,8 @@
 		DD898AB0279C873800F6188A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD898AAE279C873800F6188A /* Main.storyboard */; };
 		DD898AB2279C873A00F6188A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD898AB1279C873A00F6188A /* Assets.xcassets */; };
 		DD898AB5279C873A00F6188A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD898AB3279C873A00F6188A /* LaunchScreen.storyboard */; };
+		DDB110DA279DA02800C2E126 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB110D9279DA02800C2E126 /* QuestionManager.swift */; };
+		DDB110DC279DA6E600C2E126 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB110DB279DA6E600C2E126 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DD898AB1279C873A00F6188A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD898AB4279C873A00F6188A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD898AB6279C873A00F6188A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB110D9279DA02800C2E126 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
+		DDB110DB279DA6E600C2E126 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				DD898AA8279C873800F6188A /* AppDelegate.swift */,
 				DD898AAA279C873800F6188A /* SceneDelegate.swift */,
 				DD898AAC279C873800F6188A /* ViewController.swift */,
+				DDB110D9279DA02800C2E126 /* QuestionManager.swift */,
+				DDB110DB279DA6E600C2E126 /* Answer.swift */,
 				DD898AAE279C873800F6188A /* Main.storyboard */,
 				DD898AB1279C873A00F6188A /* Assets.xcassets */,
 				DD898AB3279C873A00F6188A /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				DD898AAD279C873800F6188A /* ViewController.swift in Sources */,
 				DD898AA9279C873800F6188A /* AppDelegate.swift in Sources */,
+				DDB110DC279DA6E600C2E126 /* Answer.swift in Sources */,
 				DD898AAB279C873800F6188A /* SceneDelegate.swift in Sources */,
+				DDB110DA279DA02800C2E126 /* QuestionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
