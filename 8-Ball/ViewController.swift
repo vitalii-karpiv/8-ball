@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, AnswerUpdater {
+    @IBOutlet weak var answerLabel: UILabel!
     
     var questionManager = QuestionManager()
 
@@ -23,14 +24,10 @@ class ViewController: UIViewController, AnswerUpdater {
         }
     }
     
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        if motion == .motionShake {
-            // TODO change UI
-        }
-    }
-    
     func updateAnswer(with answer: String) {
-        //todo update ui with answer
+        DispatchQueue.main.async {
+            self.answerLabel.text = answer
+        }
     }
 }
 
