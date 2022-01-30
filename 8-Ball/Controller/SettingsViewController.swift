@@ -12,7 +12,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var textFieldOutlet: UITextField!
     @IBOutlet weak var tableViewOutlet: UITableView!
     var db = Firestore.firestore()
-    let idCell = "idCell"
     var firestoreManager = FirestoreManager()
     var answerList: [String] = []
     
@@ -27,7 +26,7 @@ class SettingsViewController: UIViewController {
     
     func loadAnswers() {
         answerList = []
-        db.collection("answers").getDocuments() { (querySnapshot, err) in
+        db.collection(Constants.answerCollection).getDocuments() { (querySnapshot, err) in
             if let _ = err {
                 print("Error getting documents")
             } else {
@@ -66,11 +65,11 @@ extension SettingsViewController: UITextFieldDelegate {
 extension SettingsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return answerList.count-1
+        return answerList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = UITableViewCell(style: .default, reuseIdentifier: idCell)
+        let cell = UITableViewCell(style: .default, reuseIdentifier: Constants.cellId)
         cell.textLabel?.text = answerList[indexPath.row]
         return cell
     }

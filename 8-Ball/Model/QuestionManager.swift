@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 protocol AnswerUpdater {
     func updateAnswer(with answer: String)
@@ -13,7 +14,8 @@ protocol AnswerUpdater {
 
 struct QuestionManager {
     var delegate: AnswerUpdater?
-    let hardcodedAnswers = ["Yes", "No", "Definitely"]
+    var db = Firestore.firestore()
+    var hardcodedAnswers = ["Yes", "No", "Definitely"]
     let url = "https://8ball.delegator.com/magic/JSON/8ball"
     var requestUrl: URL? {
         URL(string: self.url)
@@ -25,7 +27,18 @@ struct QuestionManager {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: requestUrl!) { data, response, error in
                 if let _ = error {
-                    delegate?.updateAnswer(with: hardcodedAnswers[Int.random(in: 0...2)])
+                    db.collection(Constants.answerCollection).getDocuments() { (querySnapshot, err) in
+                        if let _ = err {
+                            delegate?.updateAnswer(with: hardcodedAnswers[Int.random(in: 0...2)])
+                        } else {
+                            for document in querySnapshot!.documents {
+                                if let saveAnswer = document.data()["answer"] {
+                                    delegate?.updateAnswer(with: saveAnswer as! String)
+                                }
+                            }
+                            delegate?.updateAnswer(with: hardcodedAnswers[Int.random(in: 0...2)])
+                        }
+                    }
                 } else {
                     if let saveData = data {
                         delegate?.updateAnswer(with: self.parseJson(saveData))

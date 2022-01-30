@@ -9,4 +9,6 @@ import Foundation
 
 struct Constants{
     static let goToSettings = "goToSetting"
+    static let answerCollection = "answers"
+    static let cellId = "CellID"
 }

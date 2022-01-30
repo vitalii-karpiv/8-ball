@@ -85,12 +85,9 @@
 			children = (
 				DD898AA8279C873800F6188A /* AppDelegate.swift */,
 				DD898AAA279C873800F6188A /* SceneDelegate.swift */,
-				DD898AAC279C873800F6188A /* ViewController.swift */,
-				DD243D73279DC42B000B3E21 /* SettingsViewController.swift */,
-				EA07589027A5B8AA00EF3B21 /* FirestoreManager.swift */,
-				DDB110D9279DA02800C2E126 /* QuestionManager.swift */,
-				DDB110DB279DA6E600C2E126 /* Answer.swift */,
 				DD243D71279DC3A4000B3E21 /* Constants.swift */,
+				EA58304427A6C85500544D0F /* Controller */,
+				EA58304527A6C8AB00544D0F /* Model */,
 				DD898AAE279C873800F6188A /* Main.storyboard */,
 				DD898AB3279C873A00F6188A /* LaunchScreen.storyboard */,
 				DD898AB1279C873A00F6188A /* Assets.xcassets */,
@@ -98,6 +95,25 @@
 				EA1EC7F027A5692F0035602D /* GoogleService-Info.plist */,
 			);
 			path = "8-Ball";
+			sourceTree = "<group>";
+		};
+		EA58304427A6C85500544D0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD898AAC279C873800F6188A /* ViewController.swift */,
+				DD243D73279DC42B000B3E21 /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA58304527A6C8AB00544D0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA07589027A5B8AA00EF3B21 /* FirestoreManager.swift */,
+				DDB110D9279DA02800C2E126 /* QuestionManager.swift */,
+				DDB110DB279DA6E600C2E126 /* Answer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EE0B6383B6E993A8A059D552 /* Pods */ = {

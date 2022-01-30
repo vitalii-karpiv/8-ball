@@ -13,7 +13,7 @@ struct FirestoreManager{
     
     func saveAnswerIntoFirestore(_ textField: UITextField) {
         if let saveData = textField.text {
-            db.collection("answers").addDocument(data: [
+            db.collection(Constants.answerCollection).addDocument(data: [
                 "answer": saveData
             ]) { err in
                 if let _ = err {
