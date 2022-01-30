@@ -18,6 +18,7 @@
 		DD898AB5279C873A00F6188A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD898AB3279C873A00F6188A /* LaunchScreen.storyboard */; };
 		DDB110DA279DA02800C2E126 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB110D9279DA02800C2E126 /* QuestionManager.swift */; };
 		DDB110DC279DA6E600C2E126 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB110DB279DA6E600C2E126 /* Answer.swift */; };
+		EA07589127A5B8AA00EF3B21 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07589027A5B8AA00EF3B21 /* FirestoreManager.swift */; };
 		EA1EC7F127A5692F0035602D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA1EC7F027A5692F0035602D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		DD898AB6279C873A00F6188A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB110D9279DA02800C2E126 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		DDB110DB279DA6E600C2E126 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		EA07589027A5B8AA00EF3B21 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		EA1EC7F027A5692F0035602D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				DD898AAA279C873800F6188A /* SceneDelegate.swift */,
 				DD898AAC279C873800F6188A /* ViewController.swift */,
 				DD243D73279DC42B000B3E21 /* SettingsViewController.swift */,
+				EA07589027A5B8AA00EF3B21 /* FirestoreManager.swift */,
 				DDB110D9279DA02800C2E126 /* QuestionManager.swift */,
 				DDB110DB279DA6E600C2E126 /* Answer.swift */,
 				DD243D71279DC3A4000B3E21 /* Constants.swift */,
@@ -229,6 +232,7 @@
 				DD898AAB279C873800F6188A /* SceneDelegate.swift in Sources */,
 				DDB110DA279DA02800C2E126 /* QuestionManager.swift in Sources */,
 				DD243D72279DC3A4000B3E21 /* Constants.swift in Sources */,
+				EA07589127A5B8AA00EF3B21 /* FirestoreManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
